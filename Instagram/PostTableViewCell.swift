@@ -17,6 +17,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var commentButton: UIButton!
+    
     
     
     override func awakeFromNib() {
@@ -56,12 +58,18 @@ class PostTableViewCell: UITableViewCell {
 
             // いいねボタンの表示
             if postData.isLiked {
-                let buttonImage = UIImage(named: "like_exist")
+                let buttonImage = UIImage(named: "heart_exist")
                 self.likeButton.setImage(buttonImage, for: .normal)
             } else {
-                let buttonImage = UIImage(named: "like_none")
+                let buttonImage = UIImage(named: "heart_none")
                 self.likeButton.setImage(buttonImage, for: .normal)
             }
-        }
+    }
+    
+    
+    
+    
+    
+    
     
 }

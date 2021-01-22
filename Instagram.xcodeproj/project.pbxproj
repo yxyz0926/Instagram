@@ -24,6 +24,7 @@
 		C5A2F3D625B5081A006CFA91 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A2F3D525B5081A006CFA91 /* PostViewController.swift */; };
 		C5A2F3D825B5082A006CFA91 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A2F3D725B5082A006CFA91 /* SettingViewController.swift */; };
 		C5A2F3DA25B50D88006CFA91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5A2F3D925B50D88006CFA91 /* GoogleService-Info.plist */; };
+		C5AAF29F25BA96AD008BBBBD /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAF29E25BA96AD008BBBBD /* CommentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		C5A2F3D525B5081A006CFA91 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		C5A2F3D725B5082A006CFA91 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		C5A2F3D925B50D88006CFA91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5AAF29E25BA96AD008BBBBD /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		ED00D2B7F957C9C0E07816D5 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0F60494BDA6DE8B2EC5BB7 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 				C575F22825B8F0DF00AF3A7D /* PostData.swift */,
 				C575F22A25B8F21A00AF3A7D /* PostTableViewCell.swift */,
 				C575F22B25B8F21B00AF3A7D /* PostTableViewCell.xib */,
+				C5AAF29E25BA96AD008BBBBD /* CommentViewController.swift */,
 				C5A2F3CD25B501AD006CFA91 /* TabBarController.swift */,
 				C5A2F3D525B5081A006CFA91 /* PostViewController.swift */,
 				C5A2F3CF25B507DB006CFA91 /* LoginViewController.swift */,
@@ -246,6 +249,7 @@
 				C5A2F3D025B507DB006CFA91 /* LoginViewController.swift in Sources */,
 				C575F22925B8F0DF00AF3A7D /* PostData.swift in Sources */,
 				C5A2F3CE25B501AE006CFA91 /* TabBarController.swift in Sources */,
+				C5AAF29F25BA96AD008BBBBD /* CommentViewController.swift in Sources */,
 				C575F22725B811DA00AF3A7D /* Const.swift in Sources */,
 				C5A2F3B025B46ADA006CFA91 /* AppDelegate.swift in Sources */,
 				C5A2F3B225B46ADA006CFA91 /* SceneDelegate.swift in Sources */,

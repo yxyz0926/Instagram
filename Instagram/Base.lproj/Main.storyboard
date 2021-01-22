@@ -180,6 +180,54 @@
             </objects>
             <point key="canvasLocation" x="902.89855072463774" y="-670.3125"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="X57-zb-Bhk">
+            <objects>
+                <viewController storyboardIdentifier="comment" id="WRp-1a-5SF" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xlq-pi-eEs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yv4-gQ-Idh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="コメント" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCO-Tu-Ja0">
+                                <rect key="frame" x="57" y="468" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="h8R-do-aF6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpY-F6-Vtn">
+                                <rect key="frame" x="57" y="532" width="300" height="30"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ugk-lm-ybR"/>
+                                </constraints>
+                                <state key="normal" title="投稿">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FCO-Tu-Ja0" firstAttribute="leading" secondItem="ZjA-rA-H1v" secondAttribute="leading" constant="57" id="BFV-aw-qVB"/>
+                            <constraint firstItem="ZjA-rA-H1v" firstAttribute="trailing" secondItem="FCO-Tu-Ja0" secondAttribute="trailing" constant="57" id="DLj-py-sUT"/>
+                            <constraint firstItem="ZjA-rA-H1v" firstAttribute="trailing" secondItem="hpY-F6-Vtn" secondAttribute="trailing" constant="57" id="Dz3-ww-cxo"/>
+                            <constraint firstItem="ZjA-rA-H1v" firstAttribute="bottom" secondItem="hpY-F6-Vtn" secondAttribute="bottom" constant="300" id="Fqn-fR-9Fu"/>
+                            <constraint firstItem="hpY-F6-Vtn" firstAttribute="top" secondItem="FCO-Tu-Ja0" secondAttribute="bottom" constant="30" id="h8t-UH-6tS"/>
+                            <constraint firstItem="hpY-F6-Vtn" firstAttribute="leading" secondItem="ZjA-rA-H1v" secondAttribute="leading" constant="57" id="yX6-oh-0Se"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZjA-rA-H1v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ri-aT-Msc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676.8115942028987" y="-668.30357142857144"/>
+        </scene>
         <!--設定-->
         <scene sceneID="fx2-Ki-UWu">
             <objects>
