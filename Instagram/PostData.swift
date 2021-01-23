@@ -16,7 +16,8 @@ import Firebase
         var date: Date?
         var likes: [String] = []
         var isLiked: Bool = false
-
+        var comment: String?
+        
         init(document: QueryDocumentSnapshot) {
             self.id = document.documentID
 
@@ -26,6 +27,8 @@ import Firebase
 
             self.caption = postDic["caption"] as? String
 
+            self.comment = postDic["comment"] as? String
+            
             let timestamp = postDic["date"] as? Timestamp
             self.date = timestamp?.dateValue()
 

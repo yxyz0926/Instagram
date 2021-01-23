@@ -20,11 +20,18 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // Firestoreのリスナー
     var listener: ListenerRegistration!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        
+        
+//        commentLabel.text = commentX
+        
         
         // カスタムセルを登録する
         let nib = UINib(nibName: "PostTableViewCell", bundle: nil)
@@ -41,6 +48,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 // listener未登録なら、登録してスナップショットを受信する
                 let postsRef = Firestore.firestore().collection(Const.PostPath).order(by: "date", descending: true)
                 listener = postsRef.addSnapshotListener() { (querySnapshot, error) in
+              
+                    
                     if let error = error {
                         print("DEBUG_PRINT: snapshotの取得が失敗しました。 \(error)")
                         return
@@ -71,10 +80,12 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return postArray.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得してデータを設定する
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PostTableViewCell
         cell.setPostData(postArray[indexPath.row])
+        
         
         // セル内のボタンのアクションをソースコードで設定する
         cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
@@ -111,6 +122,11 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                postRef.updateData(["likes": updateValue])
            }
     }
+    
+    
+    
+    
+    
     
     
     @objc func handleCommentButton(_ sender: UIButton, forEvent event: UIEvent) {
