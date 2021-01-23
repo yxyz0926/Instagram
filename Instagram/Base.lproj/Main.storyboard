@@ -210,6 +210,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="commentButton:" destination="WRp-1a-5SF" eventType="touchUpInside" id="FhF-a7-WXC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -223,10 +226,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZjA-rA-H1v"/>
                     </view>
+                    <connections>
+                        <outlet property="commentTextField" destination="FCO-Tu-Ja0" id="HdC-bX-uLD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ri-aT-Msc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676.8115942028987" y="-668.30357142857144"/>
+            <point key="canvasLocation" x="-1446" y="114"/>
         </scene>
         <!--設定-->
         <scene sceneID="fx2-Ki-UWu">
