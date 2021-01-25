@@ -28,11 +28,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.delegate = self
         tableView.dataSource = self
         
-        
-        
-//        commentLabel.text = commentX
-        
-        
         // カスタムセルを登録する
         let nib = UINib(nibName: "PostTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "Cell")
@@ -130,10 +125,19 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     @objc func handleCommentButton(_ sender: UIButton, forEvent event: UIEvent) {
-    
-        let commentViewController = self.storyboard?.instantiateViewController(withIdentifier: "comment")
-        self.present(commentViewController!, animated: true, completion: nil)
 
+        let touch = event.allTouches?.first
+        let point = touch!.location(in: self.tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+        // 配列からタップされたインデックスのデータを取り出す
+        let postData = postArray[indexPath!.row]
+        
+        let commentViewController = self.storyboard?.instantiateViewController(withIdentifier: "commentViewController") as! CommentViewController
+        
+        commentViewController.postData = postData
+        
+        self.present(commentViewController, animated: true, completion: nil)
+        
     }
     
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseUI
 
 class PostTableViewCell: UITableViewCell {
@@ -22,29 +23,16 @@ class PostTableViewCell: UITableViewCell {
     
     
     
-  
-    
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
-        
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
    
-    
-    
-    
-    
      // PostDataの内容をセルに表示
         func setPostData(_ postData: PostData) {
             // 画像の表示
@@ -54,9 +42,17 @@ class PostTableViewCell: UITableViewCell {
 
             // キャプションの表示
             self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
-//            self.commentLabel.text = "\(postData.name!) : \(postData.comment!)"
+            
+            //コメントの表示
+            for comments in postData.comment{
+                self.commentLabel.text = "\(comments)"
+                
+            }
             
             
+            
+            
+           
             // 日時の表示
             self.dateLabel.text = ""
             if let date = postData.date {

@@ -10,7 +10,7 @@
         <!--ホーム-->
         <scene sceneID="Ezv-Iz-3c5">
             <objects>
-                <viewController storyboardIdentifier="Home" id="WtD-Z8-Jf0" customClass="HomeViewController" customModule="Instagram" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WtD-Z8-Jf0" customClass="HomeViewController" customModule="Instagram" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IDM-V5-hoD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
         <!--Login View Controller-->
         <scene sceneID="Wi5-Jv-bZB">
             <objects>
-                <viewController storyboardIdentifier="Login" modalPresentationStyle="fullScreen" id="ejv-Rn-hwY" customClass="LoginViewController" customModule="Instagram" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ejv-Rn-hwY" customClass="LoginViewController" customModule="Instagram" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NsZ-gb-Roy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +119,7 @@
         <!--Post View Controller-->
         <scene sceneID="bPZ-6r-DYm">
             <objects>
-                <viewController storyboardIdentifier="Post" id="slG-yN-nax" customClass="PostViewController" customModule="Instagram" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Post" useStoryboardIdentifierAsRestorationIdentifier="YES" id="slG-yN-nax" customClass="PostViewController" customModule="Instagram" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bCK-ro-JeO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,7 +183,7 @@
         <!--Comment View Controller-->
         <scene sceneID="X57-zb-Bhk">
             <objects>
-                <viewController storyboardIdentifier="comment" id="WRp-1a-5SF" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="commentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WRp-1a-5SF" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xlq-pi-eEs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,7 +255,7 @@
         <!--設定-->
         <scene sceneID="fx2-Ki-UWu">
             <objects>
-                <viewController storyboardIdentifier="Setting" id="jZz-V1-ze3" customClass="SettingViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Setting" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jZz-V1-ze3" customClass="SettingViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LUn-SP-8va">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -316,7 +316,7 @@
         <!--投稿-->
         <scene sceneID="WkX-RT-kMW">
             <objects>
-                <viewController storyboardIdentifier="ImageSelect" id="cBA-0t-PT3" customClass="ImageSelectViewController" customModule="Instagram" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageSelect" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cBA-0t-PT3" customClass="ImageSelectViewController" customModule="Instagram" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mIE-IJ-yfW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

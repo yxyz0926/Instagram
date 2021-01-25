@@ -16,7 +16,9 @@ import Firebase
         var date: Date?
         var likes: [String] = []
         var isLiked: Bool = false
-        var comment: String?
+        var comment: [String] = []
+        
+        
         
         init(document: QueryDocumentSnapshot) {
             self.id = document.documentID
@@ -26,12 +28,14 @@ import Firebase
             self.name = postDic["name"] as? String
 
             self.caption = postDic["caption"] as? String
-
-            self.comment = postDic["comment"] as? String
             
             let timestamp = postDic["date"] as? Timestamp
             self.date = timestamp?.dateValue()
 
+            if let comment = postDic["comment"] as? [String] {
+                self.comment = comment
+            }
+            
             if let likes = postDic["likes"] as? [String] {
                 self.likes = likes
             }
@@ -41,6 +45,8 @@ import Firebase
                     // myidがあれば、いいねを押していると認識する。
                     self.isLiked = true
                 }
-            }
+            
         }
     }
+}
+
