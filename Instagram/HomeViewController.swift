@@ -16,10 +16,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     // 投稿データを格納する配列
     var postArray: [PostData] = []
-    
     // Firestoreのリスナー
     var listener: ListenerRegistration!
-    
     
     
     override func viewDidLoad() {

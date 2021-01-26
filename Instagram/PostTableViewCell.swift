@@ -50,9 +50,6 @@ class PostTableViewCell: UITableViewCell {
             }
             
             
-            
-            
-           
             // 日時の表示
             self.dateLabel.text = ""
             if let date = postData.date {
@@ -75,11 +72,5 @@ class PostTableViewCell: UITableViewCell {
                 self.likeButton.setImage(buttonImage, for: .normal)
             }
     }
-    
-    
-    
-    
-    
-    
     
 }

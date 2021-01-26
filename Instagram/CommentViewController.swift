@@ -20,15 +20,15 @@ class CommentViewController: UIViewController{
     
     @IBAction func commentButton(_ sender: Any) {
         
-       
+        let name = Auth.auth().currentUser?.displayName
         var updateValue: FieldValue
         updateValue = FieldValue.arrayUnion([
-            "\(postData.name!) : \(self.commentTextField.text!)"
+            "\(name!) : \(self.commentTextField.text!)"
         ])
         let postRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
-            postRef.updateData(["comment": updateValue])
+        postRef.updateData(["comment": updateValue])
         
-        SVProgressHUD.showSuccess(withStatus: "投稿しました")
+        SVProgressHUD.showSuccess(withStatus: "投稿完了")
         // 投稿処理が完了したので先頭画面に戻る
         UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
         
